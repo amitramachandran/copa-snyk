@@ -1,0 +1,36 @@
+[
+  {
+    "packageManager": "apk",
+    "platform": "linux/arm64/v8",
+    "docker": {"baseImage": "alpine:3.14"},
+    "vulnerabilities": [
+      {
+        "id": "SNYK-ALPINE314-APKTOOLS-1534688",
+        "name": "apk-tools",
+        "version": "2.12.5-r1",
+        "nearestFixedInVersion": "2.12.6-r0",
+        "from": ["docker-image|alpine@3.14", "apk-tools@2.12.5-r1"],
+        "identifiers": {"CVE": ["CVE-2021-36159"]}
+      }
+    ]
+  },
+  {
+    "packageManager": "pip",
+    "vulnerabilities": [
+      {
+        "id": "SNYK-PYTHON-REQUESTS-5595532",
+        "name": "requests",
+        "version": "2.25.1",
+        "nearestFixedInVersion": "2.31.0",
+        "fixedIn": ["2.31.0"],
+        "identifiers": {"CVE": ["CVE-2023-32681"]}
+      }
+    ]
+  },
+  {
+    "packageManager": "maven",
+    "vulnerabilities": [
+      {"id": "SNYK-JAVA-X-1", "name": "x", "version": "1", "nearestFixedInVersion": "2", "identifiers": {"CVE": ["CVE-1"]}}
+    ]
+  }
+]

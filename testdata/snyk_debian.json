@@ -1,0 +1,36 @@
+{
+  "ok": false,
+  "packageManager": "deb",
+  "platform": "linux/amd64",
+  "projectName": "docker-image|debian",
+  "docker": {"baseImage": "debian:11"},
+  "vulnerabilities": [
+    {
+      "id": "SNYK-DEBIAN11-CURL-2381233",
+      "name": "curl",
+      "version": "7.74.0-1.3+deb11u1",
+      "nearestFixedInVersion": "7.74.0-1.3+deb11u2",
+      "fixedIn": ["7.74.0-1.3+deb11u2"],
+      "from": ["docker-image|debian@11", "curl/libcurl4@7.74.0-1.3+deb11u1"],
+      "identifiers": {"CVE": ["CVE-2021-22945", "CVE-2021-22946"]}
+    },
+    {
+      "id": "SNYK-DEBIAN11-GLIBC-1234",
+      "name": "glibc",
+      "version": "2.31-13",
+      "nearestFixedInVersion": "",
+      "fixedIn": [],
+      "from": ["docker-image|debian@11", "glibc/libc6@2.31-13"],
+      "identifiers": {"CVE": ["CVE-2021-0001"]}
+    },
+    {
+      "id": "SNYK-DEBIAN11-ZLIB-5678",
+      "name": "zlib",
+      "version": "1:1.2.11",
+      "nearestFixedInVersion": "1:1.2.12",
+      "fixedIn": ["1:1.2.12"],
+      "from": ["docker-image|debian@11", "zlib@1:1.2.11"],
+      "identifiers": {"CVE": []}
+    }
+  ]
+}
